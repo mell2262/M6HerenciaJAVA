@@ -12,9 +12,6 @@ public class Main {
 		/*Nos piden crear una clase Main que realice los siguientes pasos:
 
 1) Pedir al usuario la matrícula del coche, la marca y su color.
-2) Crear el coche con los datos anteriores.
-3) Añadirle dos ruedas traseras pidiendo al usuario la marca y el diámetro.
-4) Añadirle dos ruedas delanteras pidiendo al usuario la marca y el diámetro.
 
 */
 		Scanner scan=new Scanner(System.in);
@@ -23,9 +20,11 @@ public class Main {
 		String plate=scan.next();
 		String brand=scan.next();
 		String color=scan.next();
-////////////		
+////////////		2) Crear el coche con los datos anteriores.
+
 		Car coche=new Car(plate, brand, color);
-///////////////		
+///////////////		3) Añadirle dos ruedas traseras pidiendo al usuario la marca y el diámetro.
+
 		System.out.println("introduzca marca y diametro para ruedas traseras");
 		String brandWheel=scan.next();
 		double diameter=scan.nextDouble();
@@ -34,7 +33,8 @@ public class Main {
 		listWheel.add(new Wheel(brandWheel, diameter));
 		listWheel.add(new Wheel(brandWheel, diameter));
 		coche.addTwoWheels(listWheel);
-///////////////
+///////////////4) Añadirle dos ruedas delanteras pidiendo al usuario la marca y el diámetro.
+
 		System.out.println("introduzca marca y diametro para ruedas delanteras");
 		String brandWheel2=scan.next();
 		double diameter2=scan.nextDouble();
