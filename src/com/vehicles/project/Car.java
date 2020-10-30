@@ -8,6 +8,7 @@ public class Car extends Vehicle {
 		super(plate, brand, color);
 	}
 
+	@Override
 	public void addWheels(List<Wheel> frontWheels, List<Wheel> backWheels) throws Exception {
 		addTwoWheels(frontWheels);
 		addTwoWheels(backWheels);

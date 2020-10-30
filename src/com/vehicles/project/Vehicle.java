@@ -22,4 +22,6 @@ public abstract class Vehicle {
 		this.brand = brand;
 		this.color = color;
 	}
+	
+	public abstract void  addWheels(List<Wheel> frontWheels, List<Wheel> backWheels) throws Exception;
 }
